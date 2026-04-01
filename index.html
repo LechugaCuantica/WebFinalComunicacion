@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicación Viva</title>
+    <meta name="description"
+        content="Sitio estático sobre los tipos de comunicación, funciones del lenguaje y comunicación no verbal.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="shortcut icon" href="./img/logoSena.png" type="image/x-icon">
+    <style>
+        :root {
+            color-scheme: light;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: "Manrope", sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .display-font {
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(14px);
+        }
+    </style>
+</head>
+
+<body class="bg-mesh text-slate-900 ">
+    <header class="relative overflow-hidden pt-24">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute left-[-4rem] top-10 h-40 w-40 rounded-full bg-brand-300/30 blur-3xl"></div>
+            <div class="absolute right-[-4rem] top-24 h-56 w-56 rounded-full bg-brand-500/25 blur-3xl"></div>
+            <div class="absolute bottom-[-4rem] left-1/3 h-64 w-64 rounded-full bg-cyan-200/40 blur-3xl"></div>
+        </div>
+        <nav class="fixed inset-x-0 top-0 z-50 bg-transparent backdrop-blur-xl">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+                <a href="#inicio" class="display-font text-xl font-bold tracking-tight text-brand-900">Comunicación
+                    Viva</a>
+                <div class="hidden gap-5 text-sm font-semibold text-slate-700 md:flex">
+                    <a href="#tipos" class="transition hover:text-brand-700">Tipos</a>
+                    <a href="#funciones" class="transition hover:text-brand-700">Funciones</a>
+                    <a href="#noverbal" class="transition hover:text-brand-700">No verbal</a>
+                    <a href="#claves" class="transition hover:text-brand-700">Claves</a>
+                </div>
+            </div>
+        </nav>
+
+        <section id="inicio"
+            class="mx-auto grid max-w-7xl gap-10 px-6 pb-20 pt-8 lg:grid-cols-[1.15fr_0.85fr] lg:px-10 lg:pb-28 lg:pt-10">
+            <div class="flex flex-col justify-center" data-aos="fade-up">
+                <span
+                    class="mb-4 inline-flex w-fit rounded-full border border-brand-200 bg-white/70 px-4 py-2 text-sm font-semibold text-brand-800 shadow-sm">
+                    Página sobre la comunicación humana
+                </span>
+                <h1 class="max-w-3xl text-3xl font-extrabold leading-tight text-slate-950 md:text-6xl">
+                    Entender la comunicación es aprender a <span class="text-brand-700">conectar, expresar y
+                        convivir</span>.
+                </h1>
+                <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+                    Esta web resume los estilos de comunicación, las funciones del lenguaje y los códigos no verbales
+                    que influyen en la manera en que pensamos, sentimos y nos relacionamos.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#tipos"
+                        class="rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white shadow-glow transition hover:bg-brand-700">
+                        Explorar contenidos
+                    </a>
+                    <a href="#galeria"
+                        class="rounded-full border border-brand-200 bg-white/80 px-6 py-3 text-sm font-bold text-brand-800 transition hover:border-brand-400 hover:text-brand-900">
+                        Ver ideas visuales
+                    </a>
+                </div>
+                <div class="mt-10 grid gap-4 sm:grid-cols-3">
+                    <div class="glass rounded-2xl border border-white/60 p-4 shadow-sm">
+                        <p class="text-3xl font-extrabold text-brand-700">5</p>
+                        <p class="mt-1 text-sm text-slate-600">tipos de comunicación interpersonal</p>
+                    </div>
+                    <div class="glass rounded-2xl border border-white/60 p-4 shadow-sm">
+                        <p class="text-3xl font-extrabold text-brand-700">6</p>
+                        <p class="mt-1 text-sm text-slate-600">funciones esenciales del lenguaje</p>
+                    </div>
+                    <div class="glass rounded-2xl border border-white/60 p-4 shadow-sm">
+                        <p class="text-3xl font-extrabold text-brand-700">6</p>
+                        <p class="mt-1 text-sm text-slate-600">formas clave de comunicación no verbal</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative" data-aos="zoom-in" data-aos-delay="150">
+                <div class="glass relative overflow-hidden rounded-[2rem] border border-white/60 p-6 shadow-glow">
+                    <div
+                        class="rounded-[1.5rem] bg-gradient-to-br from-brand-900 via-brand-700 to-sky-400 p-7 text-white">
+                        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-100">Mapa conceptual</p>
+                        <div class="mt-6 grid gap-4">
+                            <div class="rounded-2xl bg-white/12 p-4">
+                                <h3 class="text-lg font-bold">Mensaje verbal</h3>
+                                <p class="mt-1 text-sm text-cyan-50">Palabras, estructura, intención y contexto.</p>
+                            </div>
+                            <div class="rounded-2xl bg-white/12 p-4">
+                                <h3 class="text-lg font-bold">Mensaje no verbal</h3>
+                                <p class="mt-1 text-sm text-cyan-50">Gestos, tono, distancia, expresión facial y
+                                    entorno.</p>
+                            </div>
+                            <div class="rounded-2xl bg-white/12 p-4">
+                                <h3 class="text-lg font-bold">Impacto social</h3>
+                                <p class="mt-1 text-sm text-cyan-50">Influye en conflictos, liderazgo, empatía y
+                                    convivencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 grid gap-3 sm:grid-cols-2">
+                        <div class="rounded-2xl border border-brand-100 bg-brand-50 p-4">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-brand-700">Idea clave</p>
+                            <p class="mt-2 text-sm text-slate-700">No basta con hablar: comunicar implica ser entendido.
+                            </p>
+                        </div>
+                        <div class="rounded-2xl border border-sky-100 bg-white p-4">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-brand-700">Enfoque</p>
+                            <p class="mt-2 text-sm text-slate-700">La comunicación asertiva suele ser la forma más
+                                saludable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="mx-auto max-w-7xl space-y-24 px-6 pb-24 lg:px-10">
+        <section id="tipos">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="text-sm font-bold uppercase tracking-[0.3em] text-brand-700">Tipos de la comunicación</p>
+                <h2 class="mt-3 text-3xl font-extrabold text-slate-950 md:text-4xl">Estilos que moldean nuestras
+                    relaciones</h2>
+                <p class="mt-4 text-lg leading-8 text-slate-700">
+                    Cada estilo de comunicación revela una forma distinta de manejar emociones, necesidades y
+                    conflictos. Reconocerlos ayuda a mejorar la convivencia en el aula, la familia, el trabajo y la vida
+                    diaria.
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="fade-up">
+                    <div
+                        class="mb-4 inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.25em] text-brand-700">
+                        A</div>
+                    <h3 class="text-2xl font-bold text-slate-900">Comunicación pasiva</h3>
+                    <p class="mt-3 text-slate-700">La persona evita expresar sus ideas o necesidades por miedo al
+                        rechazo, al conflicto o a incomodar a otros.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                        <li>Calla opiniones importantes.</li>
+                        <li>Cede con facilidad aunque no esté de acuerdo.</li>
+                        <li>Puede generar frustración, inseguridad y resentimiento.</li>
+                    </ul>
+                </article>
+
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="fade-up"
+                    data-aos-delay="80">
+                    <div
+                        class="mb-4 inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.25em] text-brand-700">
+                        B</div>
+                    <h3 class="text-2xl font-bold text-slate-900">Comunicación agresiva</h3>
+                    <p class="mt-3 text-slate-700">Busca imponerse por encima de los demás, usando un lenguaje
+                        dominante, ofensivo o intimidante.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                        <li>Interrumpe, acusa o descalifica.</li>
+                        <li>Usa tono fuerte y lenguaje corporal invasivo.</li>
+                        <li>Produce miedo, rechazo y ruptura de vínculos.</li>
+                    </ul>
+                </article>
+
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="fade-up"
+                    data-aos-delay="140">
+                    <div
+                        class="mb-4 inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.25em] text-brand-700">
+                        C</div>
+                    <h3 class="text-2xl font-bold text-slate-900">Comunicación pasiva-agresiva</h3>
+                    <p class="mt-3 text-slate-700">La molestia no se expresa de forma directa, sino mediante indirectas,
+                        ironías, silencios o sabotajes sutiles.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                        <li>Dice “todo bien” aunque exista enojo.</li>
+                        <li>Envía mensajes ambiguos o sarcásticos.</li>
+                        <li>Complica la confianza porque es poco clara.</li>
+                    </ul>
+                </article>
+
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="fade-up">
+                    <div
+                        class="mb-4 inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.25em] text-brand-700">
+                        D</div>
+                    <h3 class="text-2xl font-bold text-slate-900">Comunicación asertiva</h3>
+                    <p class="mt-3 text-slate-700">Expresa pensamientos, emociones y límites con claridad, respeto y
+                        seguridad, sin atacar ni someterse.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                        <li>Defiende derechos sin dañar a otros.</li>
+                        <li>Escucha activamente y responde con empatía.</li>
+                        <li>Favorece acuerdos, respeto mutuo y liderazgo sano.</li>
+                    </ul>
+                </article>
+
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm lg:col-span-2 xl:col-span-2"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="mb-4 inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.25em] text-brand-700">
+                        E</div>
+                    <h3 class="text-2xl font-bold text-slate-900">Comunicación agresiva-pasiva</h3>
+                    <p class="mt-3 text-slate-700">
+                        Combina momentos de sumisión con estallidos agresivos. La persona puede guardar silencio durante
+                        mucho tiempo y luego reaccionar con dureza cuando la tensión se acumula.
+                    </p>
+                    <div class="mt-4 grid gap-4 md:grid-cols-2">
+                        <div class="rounded-2xl bg-brand-50 p-4">
+                            <p class="text-sm font-bold text-brand-800">Señales frecuentes</p>
+                            <p class="mt-2 text-sm text-slate-700">Evita hablar de inmediato, pero más tarde responde
+                                con reproches intensos, tono hostil o rechazo total.</p>
+                        </div>
+                        <div class="rounded-2xl bg-white p-4">
+                            <p class="text-sm font-bold text-brand-800">Riesgo principal</p>
+                            <p class="mt-2 text-sm text-slate-700">Hace impredecible la relación y dificulta la
+                                resolución sana de conflictos.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="funciones">
+            <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+                <div data-aos="fade-up">
+                    <p class="text-sm font-bold uppercase tracking-[0.3em] text-brand-700">Funciones del lenguaje</p>
+                    <h2 class="mt-3 text-3xl font-extrabold text-slate-950 md:text-4xl">Seis formas de usar el lenguaje
+                    </h2>
+                    <p class="mt-4 text-lg leading-8 text-slate-700">
+                        El lenguaje no cumple una sola tarea. Dependiendo de la intención del emisor, puede expresar
+                        emociones, informar, persuadir, mantener el contacto o reflexionar sobre sí mismo.
+                    </p>
+                    <div
+                        class="mt-6 rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 p-6 text-white shadow-glow">
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-100">Dato importante</p>
+                        <p class="mt-3 text-base leading-7 text-cyan-50">
+                            En una sola conversación pueden aparecer varias funciones del lenguaje al mismo tiempo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid gap-4 md:grid-cols-2" data-aos="fade-up" data-aos-delay="80">
+                    <article class="glass rounded-2xl border border-white/70 p-5 shadow-sm">
+                        <h3 class="text-xl font-bold text-brand-800">1. Emotiva</h3>
+                        <p class="mt-2 text-sm text-slate-700">Expresa sentimientos, estados de ánimo y emociones del
+                            emisor.</p>
+                        <p class="mt-3 text-sm font-semibold text-slate-500">Ejemplo: “Estoy muy feliz por este logro”.
+                        </p>
+                    </article>
+                    <article class="glass rounded-2xl border border-white/70 p-5 shadow-sm">
+                        <h3 class="text-xl font-bold text-brand-800">2. Referencial</h3>
+                        <p class="mt-2 text-sm text-slate-700">Informa de manera objetiva sobre hechos, datos o
+                            realidades externas.</p>
+                        <p class="mt-3 text-sm font-semibold text-slate-500">Ejemplo: “La comunicación no verbal
+                            acompaña al mensaje oral”.</p>
+                    </article>
+                    <article class="glass rounded-2xl border border-white/70 p-5 shadow-sm">
+                        <h3 class="text-xl font-bold text-brand-800">3. Apelativa</h3>
+                        <p class="mt-2 text-sm text-slate-700">Busca influir en el receptor, provocar una respuesta o
+                            moverlo a actuar.</p>
+                        <p class="mt-3 text-sm font-semibold text-slate-500">Ejemplo: “Escúchame con atención, por
+                            favor”.</p>
+                    </article>
+                    <article class="glass rounded-2xl border border-white/70 p-5 shadow-sm">
+                        <h3 class="text-xl font-bold text-brand-800">4. Fática</h3>
+                        <p class="mt-2 text-sm text-slate-700">Sirve para iniciar, mantener o comprobar el canal de
+                            comunicación.</p>
+                        <p class="mt-3 text-sm font-semibold text-slate-500">Ejemplo: “¿Hola? ¿Sí me escuchas?”.</p>
+                    </article>
+                    <article class="glass rounded-2xl border border-white/70 p-5 shadow-sm">
+                        <h3 class="text-xl font-bold text-brand-800">5. Poética</h3>
+                        <p class="mt-2 text-sm text-slate-700">Se centra en la forma del mensaje y su valor estético o
+                            creativo.</p>
+                        <p class="mt-3 text-sm font-semibold text-slate-500">Ejemplo: “Tus palabras son puentes sobre el
+                            silencio”.</p>
+                    </article>
+                    <article class="glass rounded-2xl border border-white/70 p-5 shadow-sm">
+                        <h3 class="text-xl font-bold text-brand-800">6. Metalingüística</h3>
+                        <p class="mt-2 text-sm text-slate-700">Usa el lenguaje para explicar el propio lenguaje, sus
+                            reglas o significados.</p>
+                        <p class="mt-3 text-sm font-semibold text-slate-500">Ejemplo: “Asertivo significa expresar ideas
+                            con respeto y claridad”.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="noverbal">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="text-sm font-bold uppercase tracking-[0.3em] text-brand-700">Comunicación no verbal</p>
+                <h2 class="mt-3 text-3xl font-extrabold text-slate-950 md:text-4xl">Lo que también comunica sin palabras
+                </h2>
+                <p class="mt-4 text-lg leading-8 text-slate-700">
+                    El cuerpo, la voz y el entorno social transmiten significados que pueden reforzar, contradecir o
+                    sustituir al mensaje verbal.
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="zoom-in">
+                    <h3 class="text-2xl font-bold text-slate-900">1. Kinesis</h3>
+                    <p class="mt-3 text-slate-700">Estudia los movimientos corporales, posturas, miradas y expresiones
+                        faciales.</p>
+                </article>
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="60">
+                    <h3 class="text-2xl font-bold text-slate-900">2. Microexpresiones</h3>
+                    <p class="mt-3 text-slate-700">Son gestos faciales breves e involuntarios que revelan emociones
+                        reales.</p>
+                </article>
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="120">
+                    <h3 class="text-2xl font-bold text-slate-900">3. Proxemia</h3>
+                    <p class="mt-3 text-slate-700">Analiza el uso del espacio personal y las distancias en la
+                        interacción.</p>
+                </article>
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="zoom-in">
+                    <h3 class="text-2xl font-bold text-slate-900">4. Paralenguaje</h3>
+                    <p class="mt-3 text-slate-700">Incluye tono, volumen, velocidad, pausas y ritmo de la voz.</p>
+                </article>
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="60">
+                    <h3 class="text-2xl font-bold text-slate-900">5. Emblemas y ademanes</h3>
+                    <p class="mt-3 text-slate-700">Son gestos con significado cultural compartido, como saludar con la
+                        mano o levantar el pulgar.</p>
+                </article>
+                <article class="glass rounded-3xl border border-white/70 p-6 shadow-sm" data-aos="zoom-in"
+                    data-aos-delay="120">
+                    <h3 class="text-2xl font-bold text-slate-900">6. Entorno social</h3>
+                    <p class="mt-3 text-slate-700">La vestimenta, el protocolo y el saludo también comunican identidad,
+                        respeto y contexto social.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="claves" class="grid gap-8 lg:grid-cols-[1fr_1fr]">
+            <div class="rounded-[2rem] bg-gradient-to-br from-brand-800 to-brand-950 p-8 text-white shadow-glow"
+                data-aos="fade-up">
+                <p class="text-sm font-bold uppercase tracking-[0.3em] text-cyan-100">Aspectos importantes</p>
+                <h2 class="mt-3 text-3xl font-extrabold">Más elementos esenciales de la comunicación</h2>
+                <div class="mt-6 space-y-4 text-cyan-50">
+                    <p><strong>Escucha activa:</strong> prestar atención real al otro, confirmar comprensión y responder
+                        con empatía.</p>
+                    <p><strong>Contexto:</strong> no se comunica igual en una exposición, una entrevista o una
+                        conversación íntima.</p>
+                    <p><strong>Retroalimentación:</strong> ayuda a saber si el mensaje fue comprendido o necesita
+                        ajustes.</p>
+                    <p><strong>Barreras:</strong> ruido, prejuicios, distracciones, emociones intensas o diferencias
+                        culturales pueden distorsionar el mensaje.</p>
+                    <p><strong>Empatía:</strong> mejora la relación porque considera la perspectiva y emociones del
+                        receptor.</p>
+                </div>
+            </div>
+
+            <div class="grid gap-5" data-aos="fade-up" data-aos-delay="80">
+                <div class="glass rounded-3xl border border-white/70 p-6 shadow-sm">
+                    <h3 class="text-2xl font-bold text-slate-900">Elementos del proceso comunicativo</h3>
+                    <div class="mt-4 grid gap-3 sm:grid-cols-2">
+                        <div class="rounded-2xl bg-brand-50 p-4 text-sm text-slate-700"><strong>Emisor:</strong> quien
+                            produce el mensaje.</div>
+                        <div class="rounded-2xl bg-brand-50 p-4 text-sm text-slate-700"><strong>Receptor:</strong> quien
+                            lo recibe e interpreta.</div>
+                        <div class="rounded-2xl bg-brand-50 p-4 text-sm text-slate-700"><strong>Mensaje:</strong>
+                            contenido que se transmite.</div>
+                        <div class="rounded-2xl bg-brand-50 p-4 text-sm text-slate-700"><strong>Código:</strong> sistema
+                            de signos compartido.</div>
+                        <div class="rounded-2xl bg-brand-50 p-4 text-sm text-slate-700"><strong>Canal:</strong> medio
+                            por el cual circula el mensaje.</div>
+                        <div class="rounded-2xl bg-brand-50 p-4 text-sm text-slate-700"><strong>Contexto:</strong>
+                            situación donde ocurre la interacción.</div>
+                    </div>
+                </div>
+
+                <div class="glass rounded-3xl border border-white/70 p-6 shadow-sm">
+                    <h3 class="text-2xl font-bold text-slate-900">¿Por qué importa la buena comunicación?</h3>
+                    <p class="mt-3 text-slate-700">
+                        Porque fortalece la convivencia, previene malentendidos, mejora el trabajo en equipo y permite
+                        resolver conflictos con mayor respeto y claridad.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="text-sm font-bold uppercase tracking-[0.3em] text-brand-700">Ideas visuales para entender la
+                    comunicación interpersonal</p>
+                <h2 class="mt-3 text-3xl font-extrabold text-slate-950 md:text-4xl"> </h2>
+                <p class="mt-4 text-lg leading-8 text-slate-700">
+                    Estas imágenes representan situaciones reales de comunicación entre personas. Sirven como apoyo
+                    visual para entender mejor cómo se expresan las emociones, los tipos de comunicación y la
+                    importancia del lenguaje no verbal en el día a día.
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                <div class="overflow-hidden rounded-[1.75rem] border border-brand-100 bg-white shadow-sm"
+                    data-aos="flip-left">
+                    <img src="./img/img1.png" class="max-w-full text-lg font-bold">
+                    <div class="p-5 text-sm text-slate-700">Representa cómo las personas se comunican de forma natural
+                        mediante gestos, expresiones y lenguaje corporal en un entorno educativo.</div>
+                </div>
+
+                <div class="overflow-hidden rounded-[1.75rem] border border-brand-100 bg-white shadow-sm"
+                    data-aos="flip-left" data-aos-delay="70">
+                    <img src="./img/img2.png" class="max-w-full text-lg font-bold">
+                    <div class="p-5 text-sm text-slate-700">Ilustra los diferentes estilos de comunicación: pasiva,
+                        agresiva, pasiva-agresiva y asertiva, mostrando cómo cambian las emociones y actitudes.</div>
+                </div>
+
+                <div class="overflow-hidden rounded-[1.75rem] border border-brand-100 bg-white shadow-sm"
+                    data-aos="flip-left" data-aos-delay="140">
+                    <img src="./img/img3.png" class="max-w-full text-lg font-bold">
+                    <div class="p-5 text-sm text-slate-700">Muestra cómo las emociones pueden identificarse a través de
+                        los gestos del rostro como sorpresa, miedo, alegría y enojo.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/70 bg-white/50">
+        <div
+            class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+            <p>Comunicación Viva | Desarrollado por: <strong>Juan Camilo Osorio Garcia</strong></p>
+            <div class="flex gap-5">
+                <p>Servicio Nacional de Aprendizaje | SENA </p>
+                <img src="./img/logoSena.png" alt="Logo SENA" class="h-6 w-auto">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 850,
+            once: false,
+            offset: 120,
+            mirror: true,
+        });
+    </script>
+</body>
+
+</html>
